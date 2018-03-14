@@ -1,0 +1,32 @@
+﻿<html>
+	<head>
+		<title>Exploit</title>
+		<style type="text/css">
+.auto-style1 {
+	font-size: medium;
+}
+</style>
+	</head>
+	<body style="background-image: url('../../disconnect24.png'); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #FFFFFF;">
+    <script>
+      var shouldRunHax = (document.location.search == "?hax" && document.location.hash != "#stop");
+      var shouldReload = (document.location.hash != "#stop");
+      var flashHax = '<object data="menu.swf"><param name="allowScriptAccess" value="always"></object>';
+      if (shouldRunHax){
+        document.body.innerHTML+=flashHax;
+      }else if (shouldReload){
+        document.location = "?hax#stop";
+      }else{
+        document.body.innerHTML+="<h1>Please bookmark this page!</h1>";
+      }
+    </script>
+	<p>&nbsp;</p>
+	<p class="auto-style1">Bookmarking this page makes the installation more 
+	stable.</p>
+	<p class="auto-style1">Mail Beta installer uses FlashHax to carry the 
+	installer payload.</p>
+	<p class="auto-style1">FlashHax is by Fullmetal5.</p>
+	<p class="auto-style1">If you wish to install Homebrew Channel/BootMii, 
+	visit flashhax.com to do so.</p>
+	</body>
+</html>
